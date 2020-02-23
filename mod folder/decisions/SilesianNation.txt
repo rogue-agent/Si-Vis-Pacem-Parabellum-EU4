@@ -1,0 +1,74 @@
+country_decisions = {
+
+	silesian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_silesia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+            NOT = { exists = SIL }
+            NOT = { tag = SIL }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = POL }
+			OR = {
+				primary_culture = schlesian
+				tag = BRL
+				tag = GLG
+				tag = LGN
+				tag = RTB
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+                province_id = 263
+                province_id = 264
+                province_id = 2966
+                province_id = 4238
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SIL }
+			is_nomad = no
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			is_tribal = no
+			owns_core_province = 263
+			owns_core_province = 264
+			owns_core_province = 2966
+			owns_core_province = 4238
+		}
+		effect = {
+			change_tag = SIL
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			set_country_flag = formed_silesia_flag
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

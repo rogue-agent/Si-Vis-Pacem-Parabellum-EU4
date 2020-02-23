@@ -1,0 +1,33 @@
+third_rome = {
+	potential = {
+		num_of_ports = 1
+		NOT = {
+			capital_scope = {
+				continent = asia
+			}
+		}
+		NOT = {
+			capital_scope = {
+				continent = oceania
+			}
+		}
+		
+	}
+    
+	trigger = {
+		has_discovered = 1460
+		num_of_ports = 4
+		has_idea = quest_for_the_new_world
+		any_active_trade_node = {
+			has_merchant = ROOT
+			OR = {
+				province_id = 1361 # Straits of Johor
+				province_id = 1343 # Ganges Delta
+				province_id = 504 # Sind
+				province_id = 1340 # Comorin Cape
+			}
+		}
+	}
+
+	trade_efficiency = 0.05	
+}

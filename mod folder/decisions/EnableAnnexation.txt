@@ -1,0 +1,17 @@
+country_decisions = {
+
+	enable_annexation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			has_global_flag = disable_annexation
+		}
+		effect = {
+			clr_global_flag = disable_annexation
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

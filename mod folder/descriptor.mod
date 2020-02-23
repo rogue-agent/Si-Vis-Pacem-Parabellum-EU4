@@ -1,0 +1,15 @@
+version="1.0"
+tags={
+	"Map"
+	"Fixes"
+	"Events"
+	"Historical"
+	"New Nations"
+	"Missions And Decisions"
+	"Balance"
+	"Alternative History"
+}
+picture="thumbnail.png"
+name="Si Vis Pacem Parabellum"
+supported_version="1.29.5"
+remote_file_id="2005367922"
