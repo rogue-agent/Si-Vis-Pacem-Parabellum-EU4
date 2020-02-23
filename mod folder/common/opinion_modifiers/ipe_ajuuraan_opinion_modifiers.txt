@@ -1,4 +1,0 @@
-hee_toob_menadir_trade = {
-	opinion = 25
-	yearly_decay = 1
-}
