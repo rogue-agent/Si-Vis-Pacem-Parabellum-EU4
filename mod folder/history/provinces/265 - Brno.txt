@@ -1,19 +1,16 @@
-#4237 - Olomouc
-
-latent_trade_goods = {
-	coal
-}
+#265 - Brno
 
 owner = MVA
 controller = MVA
-capital = "Olmütz"
+capital = "Brünn"
 culture = czech
 religion = catholic
-trade_goods = grain 
+trade_goods = wine 
 hre = yes
 base_tax = 3
 base_production = 3
-base_manpower = 3
+base_manpower = 2
+#estate = estate_burghers
 is_city = yes
 add_core = BOH
 add_core = MVA

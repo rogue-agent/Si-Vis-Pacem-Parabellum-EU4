@@ -1,0 +1,81 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = arpitan
+religion = protestant
+add_accepted_culture = occitain
+historical_friend = FRA
+government_rank = 1
+
+# Princes of Orange #
+1393.2.10 = {
+	monarch = {
+		name = "Jean III"
+        monarch_name = "Jean I"
+		dynasty = "de Châlon"
+        birth_date = 1370.1.1
+		death_date = 1418.9.2
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}
+
+1417.10.1 = {
+	heir = {
+		name = "Louis II"
+		monarch_name = "Louis I"
+		dynasty = "de Châlon"
+		birth_date = 1390.1.1
+		death_date = 1463.12.3
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1463.12.3 = {
+	monarch = {
+		name = "Guillaume VII"
+		dynasty = "de Châlon"
+        monarch_name = "Guillaume II"
+        birth_date = 1435.4.1
+		death_date = 1475.9.27
+	}
+}
+1475.9.27 = {
+	monarch = {
+		name = "Jean IV"
+		dynasty = "de Châlon"
+        monarch_name = "Jean II"
+        birth_date = 1443.1.1
+		death_date = 1502.4.15
+	}
+}
+1502.4.15 = {
+	monarch = {
+		name = "Philibert"
+		dynasty = "de Châlon"
+        monarch_name = "Philibert I"
+        birth_date = 1502.3.18
+		death_date = 1530.8.3
+	}
+}
+1530.8.3 = {
+	monarch = {
+		name = "René I"
+		dynasty = "de Châlon"
+        monarch_name = "René I"
+        birth_date = 1519.2.5
+		death_date = 1544.7.15
+	}
+}
+1544.7.15 = {
+	monarch = {
+		name = "Willem I"
+		dynasty = "van Oranje"
+        monarch_name = "Willem I"
+        birth_date = 1533.4.24
+		death_date = 1584.7.10
+	}
+}

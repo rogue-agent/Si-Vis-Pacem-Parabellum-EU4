@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = merchants_reform
+primary_culture = roman
+religion = catholic
+technology_group = western
+capital = 118 # Rome
+fixed_capital = 118
+government_rank = 1

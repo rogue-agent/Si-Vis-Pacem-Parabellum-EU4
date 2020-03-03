@@ -9,3 +9,4 @@ historical_friend = FIN
 historical_friend = SWE
 historical_friend = SCA
 capital = 1930
+government_rank = 1

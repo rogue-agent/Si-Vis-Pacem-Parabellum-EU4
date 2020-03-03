@@ -2,7 +2,7 @@
 
 owner = NOR
 controller = NOR 
-culture = norn
+culture = faroese
 religion = catholic
 hre = no
 base_tax = 1 

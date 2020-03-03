@@ -15,3 +15,9 @@ union = {
 	start_date = 1440.7.1 #ladislaus
 	end_date = 1457.11.10
 }
+vassal = {
+	first = SAV
+	second = VSL
+	start_date = 1388.1.1
+	end_date = 1497.6.3
+}

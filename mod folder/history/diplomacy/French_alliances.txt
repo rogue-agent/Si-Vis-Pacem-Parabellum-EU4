@@ -766,3 +766,15 @@ union = {
 	start_date = 1155.1.1
 	end_date = 1525.1.1
 }
+union = {
+	first = BUR
+	second = COB
+	start_date = 1384.1.1
+	end_date = 1512.1.1
+}
+vassal = {
+	first = FRA
+	second = BER
+	start_date = 960.1.1
+	end_date = 1497.6.3
+}

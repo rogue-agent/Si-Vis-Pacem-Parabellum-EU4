@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = finnish
+add_accepted_culture = karelian
+add_accepted_culture = finno-swede
+capital = 27	# Finland
+
+1444.11.11 = {
+    monarch = {
+		country_of_origin = FIN
+		name = "Carolus"
+		dynasty = "Mannerheim"
+		birth_date = 1420.8.7
+		death_date = 1479.11.30
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
