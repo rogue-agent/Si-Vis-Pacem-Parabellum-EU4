@@ -778,3 +778,9 @@ vassal = {
 	start_date = 960.1.1
 	end_date = 1497.6.3
 }
+vassal = {
+	first = ENG
+	second = CME
+	start_date = 1424.1.1
+	end_date = 1497.6.3
+}

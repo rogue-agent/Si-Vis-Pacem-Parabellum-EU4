@@ -297,6 +297,6 @@ vassal = {
 vassal = {
 	first = SWE
 	second = FIN
-	start_date = 1323.1.1 # duchy came under swedish rule
+	start_date = 1444.1.1 # duchy came under swedish rule
 	end_date = 1743.1.1 # Treaty of Åbo
 }

@@ -13,7 +13,7 @@ capital = "Roma"
 is_city = yes
 fort_15th = yes #Castel Sant'Angelo
 add_core = PAP
-add_core = CSR
+permanent_core = CSR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -33,4 +33,5 @@ center_of_trade = 1
 	owner = PAP
 	controller = PAP
 	remove_core = FRA
+	remove_core = CSR
 } # # Treaty of Fontainebleau, Napoleon abdicates unconditionally
