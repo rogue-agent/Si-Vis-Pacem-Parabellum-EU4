@@ -1,0 +1,34 @@
+country_decisions = {
+
+
+	Oeresund_tolls = {
+		desc = "Don't let the swedish thru"
+		potential = {
+			OR = {
+				owns_core_province = 12
+				owns_core_province = 6
+				owns_core_province = 14
+			}
+		}
+		allow = {
+			stability = 2
+			adm_power = 100
+		}
+		effect = {
+			add_prestige = 5
+			add_country_modifier = {
+				name = oeresund_toll
+				location = 12
+			}
+			change_adm = -100
+			remove_opinion = {
+				who = SWE
+				value = -100
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = finnish
 add_accepted_culture = karelian
 add_accepted_culture = finno-swede
+historical_rival = SWE
 capital = 27	# Finland
 
 1444.11.11 = {
