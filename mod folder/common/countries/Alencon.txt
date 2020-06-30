@@ -42,7 +42,7 @@ monarch_names = {
 	"Henri-Alexandre #0" = 20
 	"Nicolas #0" = 20
 	"Alexandre-Louis #0" = 10
-	"FranÁois #0" = 10
+	"Franùois #0" = 10
 	"Jean #0" = 5		
 	"Antoine Philippe #0" = 5
 	"Hughes #2" = 1
@@ -50,7 +50,7 @@ monarch_names = {
 	"Alexandre #0" = 0
 	"Ambroise #0" = 0
 	"Armand #0" = 0
-	"BarthÈlemy #0" = 0
+	"Barthùlemy #0" = 0
 	"Bernard #0" = 0
 	"Claude #0" = 0
 	"Denis #0" = 0
@@ -69,7 +69,7 @@ monarch_names = {
 	"Michel #0" = 0
 	"Pierre #0" = 0
 	"Raoul #0" = 0
-	"RenÈ #0" = 0
+	"Renù #0" = 0
 	"Simon #0" = 0
 	"Thibaut #0" = 0
 	"Xavier #0" = 0
@@ -84,40 +84,40 @@ monarch_names = {
 ship_names = {
         "l'Amboise" "l'Amilly" "l'Artenay" "l'Azay-le-Rideau"
         "la Beaune-la-Rolande" "le Beauregard" "la Bellegarde" "le Blois" "la Briare"
-        "la Chalette" "le Chambord" "le Chamerolles" "le Ch‚teauneuf" "le Ch‚teau-Renard" "le Ch‚tillon-Coligny" "le ChÈcy" "le Chenonceau" "le Cheverny" "le Chevilly" "le ClÈry-Saint-AndrÈ" "le Combleux" "le Courtenay"
+        "la Chalette" "le Chambord" "le Chamerolles" "le Chùteauneuf" "le Chùteau-Renard" "le Chùtillon-Coligny" "le Chùcy" "le Chenonceau" "le Cheverny" "le Chevilly" "le Clùry-Saint-Andrù" "le Combleux" "le Courtenay"
         "le Dunois"
-        "la Fay-aux-Loges" "le FerriËres" "la FertÈ-Saint-Aubin" "le Fleury-les-Aubrais"
+        "la Fay-aux-Loges" "le Ferriùres" "la Fertù-Saint-Aubin" "le Fleury-les-Aubrais"
         "le Germigny" "le Gien"
         "le Jargeau"
-        "la BussiËre"
+        "la Bussiùre"
         "le Malesherbes" "le Meung-sur-Loire" "le Montargis"
         "le Neuville-aux-Bois"
         "l'Olivet" "l'Outarville" "l'Ouzouer"
         "le Patay" "le Pithiviers" "le Pontchevron" "le Puiseaux"
-        "le Saint-BenoÓt" "le Saint-Jean-de-Braye" "le Saint-Jean-le-Blanc" "le Sully"
+        "le Saint-Benoùt" "le Saint-Jean-de-Braye" "le Saint-Jean-le-Blanc" "le Sully"
         "le Talcy"
-        "le VendÙme" "le Villesavin"
+        "le Vendùme" "le Villesavin"
 }
 
 leader_names = {
         "d'Avaray"
         Badoux "de Barville" "de Beaugency" "de Beauharnais" "de Beauregard" "du Bellay" "Bernard de Montebise" "de Boigneux" 
-        "de Chabot" "de Ch‚tillon"
+        "de Chabot" "de Chùtillon"
         d'Ennery
-        "de Gauville" "de Geresme" "GivËs de Creusy" Garandeau "de Garlande"
-        "de Laage" "de La BrisardiËre" "de La BussiËre" "de La Chapelle" "de La Chesnaye" "de La Valette" "de L'Estoile" "Le MaÓtre" "Le Texier"
-        "de Maintenon" "de Marolles" "de Martel de RÈnac" "de Montboissier" "de Montigny" "de MontlhÈry"
+        "de Gauville" "de Geresme" "Givùs de Creusy" Garandeau "de Garlande"
+        "de Laage" "de La Brisardiùre" "de La Bussiùre" "de La Chapelle" "de La Chesnaye" "de La Valette" "de L'Estoile" "Le Maùtre" "Le Texier"
+        "de Maintenon" "de Marolles" "de Martel de Rùnac" "de Montboissier" "de Montigny" "de Montlhùry"
         "de Neufcarres"
-        "PÈan de Saint-Gilles" "de PhÈline" "de Pontville" "de PrunelÈ"
-        "de Rancourt" "de RÈmÈon d'Orval" 
-        "de Sabrecois" "de Saint-Cosme" "de Saint-Marc" "de Saint-Mars" "de Salles" "Scott de Coulanges" "de Senneville" "de SÈrizy"  "Seurat de La Boullaye"
+        "Pùan de Saint-Gilles" "de Phùline" "de Pontville" "de Prunelù"
+        "de Rancourt" "de Rùmùon d'Orval" 
+        "de Sabrecois" "de Saint-Cosme" "de Saint-Marc" "de Saint-Mars" "de Salles" "Scott de Coulanges" "de Senneville" "de Sùrizy"  "Seurat de La Boullaye"
         "de Tannoys"
         "de Villiers"
 }
 
 army_names = { 
-         "ArmÈe du BlÈsois"   "ArmÈe de la Beauce" 
-         "ArmÈe du Dunois"    "ArmÈe du G‚tinais"
-         "ArmÈe de Sologne"      "ArmÈe du VendÙmois" "ArmÈe de la Loire"
-	 "ArmÈe de $PROVINCE$" 
+         "Armùe du Blùsois"   "Armùe de la Beauce" 
+         "Armùe du Dunois"    "Armùe du Gùtinais"
+         "Armùe de Sologne"      "Armùe du Vendùmois" "Armùe de la Loire"
+	 "Armùe de $PROVINCE$" 
 }

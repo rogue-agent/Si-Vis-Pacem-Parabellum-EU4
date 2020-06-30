@@ -1,4 +1,4 @@
-version="2.2"
+version="2.5"
 tags={
 	"Map"
 	"Fixes"
@@ -11,5 +11,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Si Vis Pacem Parabellum"
-supported_version="1.29.5"
+supported_version="1.30.*"
 remote_file_id="2005367922"
