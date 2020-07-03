@@ -1,0 +1,19 @@
+wro_mod_good_ally = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+wro_mod_opinion_elector = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+wro_mod_support_silesia = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+wro_mod_opinion_religion= {
+	opinion = 50
+	yearly_decay = 1
+}

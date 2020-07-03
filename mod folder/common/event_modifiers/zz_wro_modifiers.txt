@@ -1,0 +1,189 @@
+wro_mod_feeling_strong = {
+	discipline = 0.05
+	land_morale = 0.1
+}
+
+wro_mod_elector = {
+	prestige = 1
+	prestige_decay = -0.01
+	improve_relation_modifier = 0.2
+}
+
+wro_mod_gniezno_metropoly = {
+	state_maintenance_modifier = -0.1
+}
+
+wro_mod_wojciech = {
+	local_production_efficiency  = 0.1
+	local_build_cost = -0.25
+}
+
+wro_mod_pomerania_metropoly = {
+	navy_tradition  = 0.5
+}
+
+wro_mod_otto_navy = {
+	local_ship_cost = -0.25
+	ship_recruit_speed = -0.25
+}
+
+wro_mod_otto = {
+	local_regiment_cost = -0.25
+	regiment_recruit_speed = -0.25
+}
+wro_mod_ermland_metropoly = {
+	army_tradition = 0.5
+}
+
+wro_mod_ermland = {
+	local_regiment_cost = -0.25
+	regiment_recruit_speed = -0.25
+}
+
+wro_mod_teutonic_power = {
+	fort_maintenance_modifier = -0.1
+	infantry_power = 0.1
+}
+
+wro_mod_reputation = {
+	diplomatic_reputation = 1
+	diplomats = 1
+}
+
+wro_mod_united_silesia = {
+	devotion = 1
+	reform_progress_growth = 0.1
+}
+
+wro_mod_united_diocese = {
+	local_development_cost = -0.1
+	local_unrest = -1
+	local_autonomy = -0.05
+}
+
+wro_mod_krakow_metropoly = {
+	spy_offence = 0.1
+}
+
+wro_mod_stanislaus = {
+	province_trade_power_modifier = 0.1	
+	trade_goods_size_modifier = 0.25
+}
+
+wro_mod_primate_poland = {
+	stability_cost_modifier = -0.1
+}
+
+wro_mod_primus_pl = {
+	local_autonomy = -0.1
+	local_tax_modifier = 0.1
+}
+
+wro_mod_primate_hungary = {
+	trade_steering = 0.1
+}
+
+wro_mod_primus_hun = {
+	local_unrest = -1
+	local_production_efficiency = 0.1
+}
+
+wro_mod_prague_metropoly = {
+	global_institution_spread = 0.05
+}
+
+wro_mod_wenclaus = {
+	province_trade_power_modifier = 0.1
+	trade_goods_size_modifier = 0.25
+}
+
+wro_mod_primus_bohemia = {
+	embracement_cost = -0.1
+}
+
+wro_mod_primus_cz = {
+	local_autonomy = -0.1
+	local_production_efficiency = 0.1
+}
+
+wro_mod_primus_austria = {
+	improve_relation_modifier = 0.2
+}
+
+wro_mod_rupert = {
+	local_unrest = -1
+	local_tax_modifier = 0.1
+}
+
+wro_mod_island	= {
+	devotion = 1
+	global_unrest = -2
+}
+
+wro_mod_reformation = {
+	tolerance_own = 1
+	idea_cost = -0.1
+	church_power_modifier = 0.5
+	monthly_fervor_increase = 1
+}
+
+wro_mod_reformation_2 = {
+	tolerance_own = 2
+	idea_cost = -0.2
+	inflation_reduction = 0.1
+	church_power_modifier = 1
+	monthly_fervor_increase = 2
+}
+
+wro_mod_trade_1 = {
+	global_trade_power = 0.1
+	trade_efficiency = 0.1
+	center_of_trade_upgrade_cost = -0.1
+}
+
+wro_mod_trade_2 = {
+	global_trade_power = 0.2
+	trade_efficiency = 0.2
+	global_trade_goods_size_modifier = 0.1
+	center_of_trade_upgrade_cost = -0.1
+}
+
+wro_mod_trade_3 = {
+	global_trade_power = 0.3
+	trade_efficiency = 0.3
+	global_trade_goods_size_modifier = 0.1
+	global_prov_trade_power_modifier = 0.1
+}
+
+wro_mod_primus_germany	= {
+	fabricate_claims_cost= -0.25
+}
+
+wro_mod_primus_ger = {
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.25
+}
+
+wro_mod_semper = {
+	tolerance_own = 1
+	global_tax_modifier = 0.075
+	papal_influence = 1
+}
+
+wro_mod_pope = {
+	tolerance_own = 2
+	global_tax_modifier = 0.15
+	land_morale = 0.1
+	papal_influence = 2
+}
+
+wro_mod_festung = {
+	local_defensiveness = 0.25
+	supply_limit_modifier = 0.5
+	local_hostile_attrition = 5
+}
+
+wro_miss_independence = {
+	fabricate_claims_cost= -0.25
+	improve_relation_modifier = 0.2
+}

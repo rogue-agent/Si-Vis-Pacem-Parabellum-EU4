@@ -1,0 +1,7 @@
+# Bohemia - Wroclaw
+vassal = {
+	first = BOH
+	second = WRO
+	start_date = 1444.1.1
+	end_date = 1526.8.29
+}

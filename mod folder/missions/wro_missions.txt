@@ -1,0 +1,1361 @@
+wro_slot_1 = {
+	
+	slot = 1                   # Which column the missions will appear in. 1 to 5.
+    generic = no              # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+	potential = {
+		tag = WRO
+		NOT = { map_setup = map_setup_random }
+	}
+
+	wro_miss_gniezno = {
+		icon = develop_konigsberg
+		required_missions = { wro_miss_unify_silesia}
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = { area = wielkopolska_area
+			area = kuyavia_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	
+		trigger = {
+			wielkopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kuyavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_adm_power = 25
+			add_country_modifier = {
+				name = wro_mod_gniezno_metropoly
+				duration = -1
+			}
+			wielkopolska_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_wojciech"  
+					duration = 7300
+				}
+			}
+			
+			kuyavia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_wojciech"  
+					duration = 7300
+				}
+			}
+			
+			mazovia_area = {
+				add_permanent_claim = ROOT
+			}
+			neumark_area = {
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				add_permanent_claim = ROOT
+			}			
+			hinter_pommern_area  = {
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	
+	wro_miss_pomerania = {
+		icon = mission_eastern_european_city
+		required_missions = { wro_miss_gniezno }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = { area = neumark_area
+			area = hinter_pommern_area
+			area = vorpommern_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	
+		trigger = {
+			neumark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_mil_power = 50
+			add_papal_influence = 10
+			add_church_power = 10
+			add_fervor = 10
+			add_country_modifier = {
+				name = wro_mod_pomerania_metropoly
+				duration = -1
+			}			
+			neumark_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_otto"   
+					duration = 7300
+				}
+			}
+			
+			vorpommern_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_otto_navy"   
+					duration = 7300
+				}
+			}
+			
+			hinter_pommern_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_otto_navy"  
+					duration = 7300
+				}
+			}
+			
+			west_prussia_area = {
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	wro_miss_ermland = {
+		icon = mission_teutonic_knights
+		required_missions = { 
+			wro_miss_pomerania
+			wro_miss_primus_pl
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = { area = west_prussia_area
+			area = east_prussia_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_mil_power = 75
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 25
+			
+			add_country_modifier = {
+				name = wro_mod_ermland_metropoly
+				duration = -1
+			}	
+			
+			west_prussia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_ermland"   
+					duration = 7300
+				}
+			}
+			
+			east_prussia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_ermland"  
+					duration = 7300
+				}
+			}
+			
+			add_country_modifier = { 
+				name = "wro_mod_teutonic_power"  
+				duration = 5475
+			}
+		}
+	}
+
+}
+
+wro_slot_2 = {
+	
+	slot = 2                   # Which column the missions will appear in. 1 to 5.
+    generic = no              # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+	potential = {
+		tag = WRO
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	wro_miss_archbishopry = {
+		icon = show_piety
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			owned_by = root
+			has_tax_building_trigger = no
+		}
+		
+		trigger = {
+			all_owned_province = {
+				has_tax_building_trigger = yes
+			}
+			
+			if = {
+				limit = { religion = catholic }
+				papal_influence = 50
+			}
+			else = {
+				prestige = 30
+			}
+			
+			264 = {
+				owned_by = ROOT
+				development = 20
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = { ROOT = { is_vassal = no } }						
+				add_liberty_desire = 25
+			}
+			else = {
+				add_adm_power = 50
+			}
+			
+			
+			264 = {
+				if = {
+					limit = { NOT = { has_building = cathedral } }
+					remove_building = temple
+					add_building = cathedral
+				}
+				else = { add_base_tax = 2 }
+			}
+			add_country_modifier = {
+				name = "wro_mod_reputation"   
+				durat
+				ion = 7300
+			}
+			if = {
+				limit = { religion = catholic }
+				add_papal_influence = -50
+			}
+			else = {
+				add_prestige = -30
+			}
+			
+			every_country = {
+				limit = {
+					OR = {
+						is_rival = BOH
+						is_enemy = BOH
+					}
+				}
+				add_opinion = { who = ROOT modifier = wro_mod_support_silesia }			
+			}
+		}
+	}
+
+	wro_miss_independence = {
+		icon = mission_have_two_subjects
+		required_missions = { wro_miss_archbishopry }
+		position = 2
+
+		trigger = {
+			is_vassal = no
+			#can_create_vassals = yes
+			264 = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_stability = 1
+			add_country_modifier = {
+				name = "wro_mod_independence"   
+				duration = 7300
+			}
+			silesia_area = {
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	
+	wro_miss_unify_silesia = {
+		icon = take_silesia
+		required_missions = { wro_miss_independence }
+		position = 5
+		
+		provinces_to_highlight = {
+			area = silesia_area	
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		trigger = {
+			silesia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			add_devotion = 20
+			add_country_modifier = {
+				name = "wro_mod_united_silesia"   
+				duration = 5475
+			}
+			
+			silesia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_united_diocese"  
+					duration = 7300
+				}
+			}
+			
+			wielkopolska_area = {
+				add_permanent_claim = ROOT
+			}
+			kuyavia_area = {
+				add_permanent_claim = ROOT
+			}
+			malopolska_area = {
+				add_permanent_claim = ROOT
+			}
+			central_poland_area = {
+				add_permanent_claim = ROOT
+			}
+			moravia_area = {
+				add_permanent_claim = ROOT
+			}
+			bohemia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+		
+	}
+	
+	wro_miss_krakow = {
+		icon = promote_urbanization
+		required_missions = { wro_miss_unify_silesia }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = { area = malopolska_area	
+			area = central_poland_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_poland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_dip_power = 25
+			add_country_modifier = {
+				name = wro_mod_krakow_metropoly
+				duration = -1
+			}
+			malopolska_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_stanislaus"   
+					duration = 7300
+				}
+			}
+			
+			central_poland_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_stanislaus"   
+					duration = 7300
+				}
+			}
+			
+			sandomierz_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	wro_miss_primus_pl = {
+		icon = polish_diplomacy
+		required_missions = { 
+			wro_miss_krakow
+			wro_miss_gniezno
+		}
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = { area = wielkopolska_area
+			area = kuyavia_area
+			area = malopolska_area
+			area = central_poland_area
+			area = mazovia_area
+			area = sandomierz_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			wielkopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kuyavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malopolska_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_poland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sandomierz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_adm_power = 50
+			add_papal_influence = 10
+			add_church_power = 10
+			add_fervor = 10
+			add_country_modifier = {
+				name = wro_mod_primate_poland
+				duration = -1
+			}
+			poland_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_pl"   
+					duration = 7300
+				}
+			}
+
+			transdanubia_area = {
+				add_permanent_claim = ROOT
+			}
+			slovakia_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	wro_miss_primus_hun = {
+		icon = the_great_city_of_buda	
+		required_missions = { 
+			wro_miss_primus_pl
+		}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = { area = transdanubia_area	
+			area = slovakia_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			transdanubia_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			slovakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_dip_power = 75
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 25
+			add_country_modifier = {
+				name = wro_mod_primate_hungary
+				duration = -1
+			}			
+			carpathia_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_hun"   
+					duration = 7300
+				}
+			}	
+		}
+		
+		inner_austria_area = {
+				add_permanent_claim = ROOT
+		}
+		austria_proper_area = {
+				add_permanent_claim = ROOT
+		}
+		76 = { 
+			add_permanent_claim = ROOT
+		}
+	}
+}	
+
+wro_slot_3 = {
+	
+	slot = 3                   # Which column the missions will appear in. 1 to 5.
+    generic = no              # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+	potential = {
+		tag = WRO
+		NOT = { map_setup = map_setup_random }
+	}	
+	
+	wro_miss_alliance = {
+		icon = mission_alliances
+		required_missions = { wro_miss_independence }
+		position = 3
+	
+		trigger = {
+			OR = {
+				any_ally = {
+					is_great_power = yes
+				}
+				alliance_with = emperor
+			}	
+			num_of_allies = 2
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_mil_power = 75
+			add_country_modifier = {
+				name = "wro_mod_feeling_strong"    
+				duration = 5475
+			}
+		}
+		
+		every_country = {
+				limit = { 
+					OR = {
+						alliance_with = ROOT
+						is_emperor = yes
+					}
+				}
+				add_opinion = { who = ROOT modifier = wro_mod_good_ally }			#add modifier!!!!!!!!!!!
+		}
+	}
+	
+	wro_miss_elector = {
+		icon = join_the_empire
+		required_missions = { wro_miss_alliance }
+		position = 4
+		
+		trigger = {
+			is_elector = yes
+			prestige = 25
+			devotion = 90
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_dip_power = 75
+			add_adm_power = 75
+			add_country_modifier = {
+				name = "wro_mod_elector"   
+				duration = 7300
+			}
+		}
+		
+		every_country = {
+				limit = { 
+					OR = {
+						alliance_with = ROOT
+						is_emperor = yes
+						is_elector = yes
+					}
+				}
+				add_opinion = { who = ROOT modifier = wro_mod_opinion_elector }			
+		}
+	}
+	
+	wro_miss_prague = {
+		icon = connect_further_austria		
+		required_missions = {wro_miss_unify_silesia}
+		position = 6
+		
+		provinces_to_highlight = {
+		OR = {	area = moravia_area
+			area = bohemia_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_mil_power = 25
+			add_country_modifier = {
+					name = "wro_mod_prague_metropoly"   
+					duration = -1
+			}
+			moravia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_wenclaus"  
+					duration = 7300
+				}
+			}
+			
+			bohemia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_wenclaus"  
+					duration = 7300
+				}
+			}
+			
+			lusatia_area = {
+				add_permanent_claim = ROOT
+			}			
+			erzgebirge_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	wro_miss_primus_cz = {
+		icon = bohemian_borderlands
+		required_missions = {wro_miss_prague }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = { area = lusatia_area
+			area = erzgebirge_area 
+			area = bohemia_area
+			area = moravia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			moravia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lusatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_dip_power = 50
+			add_papal_influence = 10
+			add_church_power = 10
+			add_fervor = 10
+			add_country_modifier = {
+					name = "wro_mod_primus_bohemia"   
+					duration = -1
+			}			
+			
+			bohemia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_cz"  
+					duration = 7300
+				}
+			}
+			moravia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_cz"   
+					duration = 7300
+				}
+			}
+			lusatia_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_cz"  
+					duration = 7300
+				}
+			}
+			erzgebirge_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_cz"  
+					duration = 7300
+				}
+			}
+		}
+	
+		mittelmark_area = {
+			add_permanent_claim = ROOT
+		}
+		northern_saxony_area = {
+			add_permanent_claim = ROOT
+		}
+		south_saxony_area = {
+			add_permanent_claim = ROOT
+		}		
+	}
+	
+	wro_miss_primus_aus = {
+		icon = mission_the_austrian_succession		
+		required_missions = {wro_miss_primus_cz wro_miss_primus_hun }
+		position = 9
+		
+		provinces_to_highlight = {
+			OR = { area = austria_proper_area
+			area = inner_austria_area }
+			province_id = 76
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			inner_austria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			austria_proper_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			76 = { country_or_non_sovereign_subject_holds = ROOT }
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 25
+			add_country_modifier = {
+					name = "wro_mod_primus_austria"   
+					duration = -1
+			}			
+			south_german_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "wro_mod_rupert"  
+					duration = 7300
+				}
+			}	
+		
+		}
+	}
+		
+}	
+			
+wro_slot_4 = {
+	
+	slot = 4                   # Which column the missions will appear in. 1 to 5.
+    generic = no              # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+	potential = {
+		tag = WRO
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	wro_miss_island = {
+		icon = mission_religious
+		required_missions = {}
+		position = 1
+		
+		trigger = {
+			OR = {
+				humanist_ideas = 4
+				religious_ideas = 4
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 25
+			add_country_modifier = {
+				name = wro_mod_island				
+				duration = 9125
+			}
+		}
+	}
+	
+	wro_miss_embrace_ref = {
+		icon = mission_luther_theses
+		required_missions = { wro_miss_island }
+		position = 2
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = WRO_NOT_CATHOLIC
+					NOT = { has_country_flag = wro_catholic }
+			}
+			NOT = { current_age = age_of_discovery }
+			is_religion_enabled = protestant
+			is_religion_enabled = reformed
+			OR = {
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			set_country_flag = wro_reformed
+			add_country_modifier = {
+				name = wro_mod_reformation				
+				duration = 9125
+			}
+		}
+	}
+	
+	wro_miss_spread_ref = {
+		icon = join_the_reformation
+		required_missions = { wro_miss_embrace_ref }
+		position = 3
+		
+		trigger = {
+			is_religion_enabled = protestant
+			is_religion_enabled = reformed
+			OR = {
+				religion = hussite
+				religion = protestant
+				religion = reformed
+			}
+			OR = {
+				has_friendly_reformation_center = yes
+				custom_trigger_tooltip = {
+					tooltip = obj_convert_10_provinces_tooltip							#do lokalizacji!!!
+					check_variable = { which = num_converted_religion value = 10 }       
+				}				
+			}
+			religious_unity = 1
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = wro_mod_reformation_2				
+				duration = 9125
+			}
+			every_country = {
+				limit = { 
+					has_matching_religion = ROOT
+					is_neighbor_of = ROOT
+				}
+				add_opinion = { who = ROOT modifier = wro_mod_opinion_religion }			
+			}
+		}
+		
+	}	
+	
+	
+	wro_miss_capital_dev = {
+		icon = mission_heart_of_the_hansa
+		required_missions = {}
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 264
+		}
+		
+		trigger = {
+			264 = {
+				owned_by = ROOT
+				development = 30
+				has_building = cathedral
+				has_building = marketplace
+				has_building = workshop
+				has_building = courthouse
+			}			
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			264 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	
+	wro_miss_regional_trade = {
+		icon = mission_african_gold
+		required_missions = { wro_miss_capital_dev }
+		position = 5
+		
+		trigger = {
+			any_active_trade_node = {
+				province_id = 262
+				is_strongest_trade_power = ROOT #krakow
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = wro_mod_trade_1			
+				duration = 9125
+			}
+			add_mercantilism = 2
+		}	
+	}
+	
+	wro_miss_european_trade = {
+		icon = mission_entrepot_of_india
+		required_missions = { wro_miss_regional_trade }
+		position = 6
+		
+		trigger = {
+			
+			264 = {
+				province_has_center_of_trade_of_level = 2
+				has_building = trade_depot
+				owned_by = ROOT
+			}
+			
+			any_active_trade_node = {
+				province_id = 262
+				is_strongest_trade_power = ROOT #krakow
+			}
+			
+			custom_trigger_tooltip  = {
+				tooltip = WRO_CUST_EUROPEAN
+				any_active_trade_node = {
+					NOT = { province_id = 262 }
+					is_strongest_trade_power = ROOT					
+					all_trade_node_member_province = {
+						continent = europe
+					}
+				}
+			}
+		}
+		
+		
+		effect = {
+			add_country_modifier = {
+				name = wro_mod_trade_2			
+				duration = 9125
+			}
+			add_mercantilism = 4
+		}
+	}
+	
+	wro_miss_world_trade = {
+		icon = mission_war_chest	
+		required_missions = { wro_miss_european_trade }
+		position = 7
+		
+		trigger = {
+			
+			264 = {
+				province_has_center_of_trade_of_level = 3
+				has_building = stock_exchange
+				owned_by = ROOT
+			}
+			any_active_trade_node = {
+				province_id = 262
+				is_strongest_trade_power = ROOT #krakow
+			}
+			custom_trigger_tooltip  = {
+				tooltip = WRO_CUST_EUROPEAN
+				any_active_trade_node = {
+					NOT = { province_id = 262 }
+					is_strongest_trade_power = ROOT					
+					all_trade_node_member_province = {
+						continent = europe
+					}
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = WRO_CUST_WORLD
+				any_active_trade_node = {
+					is_strongest_trade_power = ROOT
+					all_trade_node_member_province = {
+						NOT = { continent = europe }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = wro_mod_trade_3			
+				duration = 9125
+			}
+			add_mercantilism = 8
+		}
+	}
+
+	wro_miss_primus_ger = {
+		icon = electorate_of_brandenburg
+		required_missions = {wro_miss_primus_cz}
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = { area = mittelmark_area
+			area = northern_saxony_area
+			area = south_saxony_area }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			neumark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hinter_pommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 10
+			add_adm_power = 75
+			add_papal_influence = 25
+			add_church_power = 25
+			add_fervor = 25	
+			add_country_modifier = {
+				name = wro_mod_primus_germany			
+				duration = -1
+			}
+			
+			every_owned_area = {				#do poprawy!!!!!
+				limit = {
+					owned_by = ROOT
+					region = north_germany_region
+					NOT = {
+						OR = {
+							area = lusatia_area
+							area = erzgebirge_area
+							area = moravia_area
+							area = bohemia_area
+						}
+					}							
+				}
+				add_province_modifier = {
+					name = "wro_mod_primus_ger"   
+					duration = 7300
+				}
+			}	
+		}
+	}
+}
+
+wro_slot_5 = {
+	slot = 5                   # Which column the missions will appear in. 1 to 5.
+    generic = no              # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+	potential = {
+		tag = WRO
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	wro_miss_semper = {
+		icon = chivalry_is_not_dead
+		required_missions = { wro_miss_island }
+		position = 2
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = WRO_NOT_PROTESTANT
+				NOT = { has_country_flag = wro_reformed }
+			}
+			NOT = { current_age = age_of_discovery }
+			is_religion_enabled = protestant
+			is_religion_enabled = reformed
+			religion = catholic
+			religious_unity = 1
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			set_country_flag = wro_catholic
+			add_country_modifier = {
+				name = wro_mod_semper				
+				duration = 9125
+			}
+			if = {
+				limit = {
+					264 = {
+						has_cardinal = no
+					}
+				}	
+				264 = {
+					add_cardinal = yes
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						has_cardinal = no
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_cardinal = no
+					}
+					add_cardinal = yes
+				}
+			}
+			else = {
+				add_papal_influence = 100
+			}
+		}
+	}
+	
+	wro_miss_papacy = {
+		icon = new_st_peters_basilica		
+		required_missions = { wro_miss_semper }
+		position = 3
+		
+		trigger = {
+			religion = catholic
+			is_papal_controller = yes
+			264 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect  = {
+			add_country_modifier = {
+				name = wro_mod_pope				
+				duration = 9125
+			}
+			every_country = {
+				limit = { 
+					has_matching_religion = ROOT
+					is_neighbor_of = ROOT
+				}
+				add_opinion = { who = ROOT modifier = wro_mod_opinion_religion }			
+			}
+		}
+	}
+		
+	wro_miss_festung = {
+		icon = renovate_berlin	
+		required_missions = { wro_miss_capital_dev }
+		position = 5
+
+		provinces_to_highlight = {
+			province_id = 264
+		}
+		
+		trigger = {
+			264 = {
+				has_building = fort_18th
+			}
+		}
+		
+		effect = {
+			add_province_modifier = {
+				name = wro_mod_festung						
+				duration = -1
+			}
+		}
+	}
+}
+	
+			
+		

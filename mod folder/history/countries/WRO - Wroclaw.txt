@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = leading_clergy_reform 
+government_rank = 1
+mercantilism = 15
+technology_group = western
+primary_culture = schlesian
+religion = catholic
+capital = 264
+fixed_capital = 264	# Breslau
+
+1412.12.28 = {
+	monarch = {
+		name = "Konrad IV Starszy"
+		birth_date = 1390.1.1
+		ADM = 1
+		DIP = 5
+		MIL = 4
+	}
+	add_ruler_personality = pious_personality
+}

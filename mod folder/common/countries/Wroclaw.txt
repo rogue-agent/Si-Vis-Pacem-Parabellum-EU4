@@ -1,0 +1,80 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 248 195 3 }
+
+historical_idea_groups = {
+	trade_ideas
+	plutocracy_ideas
+	humanist_ideas 
+	diplomatic_ideas 
+	innovativeness_ideas
+	spy_ideas
+	defensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Jan #3" = 40
+	"Hieronim #1" = 10
+	"Piotr #1" = 20
+	"Zyroslaw #2" = 20
+	"Heymo #1" = 10
+	"Robert #2" = 20
+	"Konrad #1" = 30
+	"Walter #1" = 10
+	"Jaroslaw #1" = 10
+	"Cyprian #1" = 10
+	"Wawrzyniec #1" = 10
+	"Tomasz #2" = 20
+	"Wladyslaw #1" = 10
+	"Henryk #1" = 10
+	"Wit #1" = 10
+	"Lutold #1" = 10
+	"Nanker #1" = 10
+	"Przeclaw #0" = 10
+	"Waclaw #0" = 10
+	"Jodok #0" = 10
+	"Rudolf #0" = 10
+	"Jakub #0" = 10
+	"Baltazar #0" = 10
+	"Kaspar #0" = 10
+	"Marcin #0" = 10
+	"Andreas #0" = 10
+	"Bonawentura #0" = 10
+	"Pawel #0" = 10
+	"Karol #0" = 30
+	"Leopold #0" = 10
+	"Sebastian #0" = 10
+	"Friedrich #0" = 10
+	"Franz Ludwig #0" = 10
+	"Philipp Ludwig #0" = 10
+	"Philipp Gotthard #0" = 10
+	"Boleslaw #0" = 10
+}
+
+leader_names = { 
+	Olesnicki "z Nysy" "z Malonne" Opolczyk Wroclawski Zaremba "de Habdank" "z Kromieryza" Nowak "z Rozemberka" Romka "z Legnicy" "z Pogorzeli" "z Olesnicy" "von Rudesheim" Thurzo Roth "von Salza" "von Promnitz" "von Logau" Gerstmann Jerin Hahn Albert "von Sitsch" "von Rostock" 
+	"von Hessen" "zu Neuburg" "von Sinzendorf" "von Schaffgotsch" Nyski "z Trzebnicy" Olawski "z Olawy" "z Wierzbna" Kominek Bertram Scinawski Sredzki Brzeski "z Brzegu" 
+}
+
+ship_names = {
+	Wroclaw Odra "Ksiaze-biskup" Nysa Silesia
+}
