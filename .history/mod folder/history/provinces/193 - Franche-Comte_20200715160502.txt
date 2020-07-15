@@ -1,18 +1,19 @@
-# 4764 - Salins. Principal cities: Salins, Lons-le-Saunier, Arlay, Pontarlier
+# 193 Franche-Comt� - Principal cities: Besan�on
 
 owner = CBU
-controller = CBU 
-capital = "Salins"
+controller = CBU
+capital = "Besancon"
 is_city = yes
-add_local_autonomy = 30 # The counts of Chalon-Arlay were very dominant in the region
+estate = estate_burghers
 culture = burgundian
 religion = catholic
 hre = yes
-base_tax = 2
-base_production = 3
+base_tax = 5 
+base_production = 5
 trade_goods = salt
-base_manpower = 2
-add_core = CBU
+base_manpower = 4
+add_core = COB
+fort_15th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
