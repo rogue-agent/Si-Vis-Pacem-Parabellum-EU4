@@ -332,7 +332,7 @@ wro_slot_2 = {
 			add_mil_power = 100
 			add_stability = 1
 			add_country_modifier = {
-				name = "wro_miss_independence"   
+				name = "wro_mod_independence"   
 				duration = 7300
 			}
 			silesia_area = {
