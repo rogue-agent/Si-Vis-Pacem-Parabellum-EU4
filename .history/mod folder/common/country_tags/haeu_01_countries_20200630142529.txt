@@ -1,0 +1,8 @@
+ALA = "countries/aland.txt"
+OSW = "countries/OselWiek.txt"
+DRP = "countries/Dorpat.txt"
+CSR = "countries/Citystaterome.txt"
+POO = "countries/Princedomorange.txt"
+COB = "countries/Countyburgundy.txt"
+VLS = "countries/Valais.txt"
+CME = "countries/Countymaine.txt"
