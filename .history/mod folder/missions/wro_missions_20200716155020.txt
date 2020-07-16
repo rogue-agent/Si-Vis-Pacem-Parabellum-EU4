@@ -835,17 +835,19 @@ wro_slot_3 = {
 					duration = 7300
 				}
 			}
-			mittelmark_area = {
-				add_permanent_claim = ROOT
-			}
-			northern_saxony_area = {
-				add_permanent_claim = ROOT
-			}
-			south_saxony_area = {
-				add_permanent_claim = ROOT
-			}
 		}
-
+	
+		mittelmark_area = {
+			add_permanent_claim = ROOT
+		}
+		northern_saxony_area = {
+			add_permanent_claim = ROOT
+		}
+		south_saxony_area = {
+			add_permanent_claim = ROOT
+		}	
+	}
+	
 	wro_miss_primus_aus = {
 		icon = mission_the_austrian_succession		
 		required_missions = {wro_miss_primus_cz wro_miss_primus_hun }
@@ -1213,7 +1215,7 @@ wro_slot_4 = {
 				duration = -1
 			}
 			
-			every_owned_province = {				#do poprawy!!!!!
+			every_owned_area = {				#do poprawy!!!!!
 				limit = {
 					owned_by = ROOT
 					region = north_germany_region
