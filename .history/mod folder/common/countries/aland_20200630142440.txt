@@ -8,7 +8,7 @@ historical_idea_groups = {
 	defensive_ideas
 	maritime_ideas
 	offensive_ideas
-	innovativeness_ideas
+	innovative_ideas
 	quality_ideas
 	economic_ideas
 }
@@ -35,7 +35,7 @@ monarch_names = {
 	"Karl #0" = 50
 	"Gustav #0" = 40
 	"Fredrik #0" = 35
-	"Hï¿½kon #0" = 30
+	"Hkon #0" = 30
 	"Erik #0" = 25
 	"Olav #0" = 15
 	"Gustav #0 Adolf" = 15
@@ -54,7 +54,7 @@ monarch_names = {
 	"Axel #0" = 0
 	"Bengt #0" = 0
 	"Birger #0" = 0
-	"Bjï¿½rn #0" = 0
+	"Bjrn #0" = 0
 	"Edvard #0" = 0
 	"Einar #0" = 0
 	"Folke #0" = 0
