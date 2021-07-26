@@ -1,2 +1,3 @@
 # Si-Vis-Pacem-Parabellum-EU4
-A mod to have small but interesting changes
+
+This mod was a version of MHAEU. Merged to-> https://github.com/rogue-agent/Historically-accurate-eu4
